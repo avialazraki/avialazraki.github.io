@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Avi Alazraki's portfolio: data analytics, business intelligence, operations and partnerships.">
+  <title>Avi Alazraki | Data Analytics & Business Intelligence</title>
+  <style>
+    :root {
+      --bg: #0b1220;
+      --panel: #152238;
+      --text: #edf4ff;
+      --muted: #b9c7db;
+      --accent: #58d6c7;
+      --line: #30445e;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    a { color: var(--accent); }
+    .container { max-width: 1050px; margin: auto; padding: 0 24px; }
+    header {
+      position: sticky; top: 0; z-index: 10;
+      background: #0b1220f2; border-bottom: 1px solid var(--line);
+    }
+    nav {
+      display: flex; justify-content: space-between;
+      align-items: center; gap: 16px; padding: 15px 0;
+      flex-wrap: wrap;
+    }
+    nav strong { color: var(--accent); font-size: 20px; }
+    nav .links { display: flex; gap: 18px; flex-wrap: wrap; }
+    nav a { text-decoration: none; color: var(--text); font-size: 14px; }
+    nav a:hover { color: var(--accent); }
+    section { padding: 65px 0; }
+    .hero { padding: 105px 0 85px; }
+    .eyebrow { color: var(--accent); font-weight: bold; letter-spacing: 2px; }
+    h1 { font-size: clamp(38px, 6vw, 65px); line-height: 1.15; margin: 14px 0; }
+    h2 { font-size: 31px; margin: 0 0 20px; }
+    h3 { margin-top: 0; }
+    p { color: var(--muted); }
+    .intro { max-width: 760px; font-size: 19px; }
+    .buttons { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 30px; }
+    .button {
+      display: inline-block; padding: 12px 20px; border-radius: 9px;
+      background: var(--accent); color: #08121e; text-decoration: none;
+      font-weight: bold;
+    }
+    .button.secondary { background: transparent; color: var(--accent); border: 1px solid var(--accent); }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+    .card {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 15px; padding: 25px;
+    }
+    .tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+    .tag {
+      border: 1px solid var(--line); background: #1c3049;
+      padding: 7px 13px; border-radius: 30px; font-size: 14px;
+    }
+    .metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
+    .metric { text-align: center; }
+    .metric strong { display: block; font-size: 30px; color: var(--accent); }
+    .metric span { color: var(--muted); font-size: 14px; }
+    .screenshot {
+      display: block; width: 100%; height: auto; border-radius: 10px;
+      border: 1px solid var(--line); margin-top: 20px;
+    }
+    .note { font-size: 13px; color: var(--muted); }
+    footer { border-top: 1px solid var(--line); padding: 25px 0; text-align: center; }
+    @media (max-width: 700px) {
+      .grid, .metrics { grid-template-columns: 1fr; }
+      section { padding: 45px 0; }
+      .hero { padding: 70px 0; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav class="container">
+    <strong>AA / Portfolio</strong>
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero container">
+    <div class="eyebrow">BUSINESS EXPERIENCE × DATA ANALYTICS</div>
+    <h1>Hi, I'm Avi.<br>Turning data into business insights.</h1>
+    <p class="intro">
+      Global operations and partnerships professional developing expertise in
+      data analytics, business intelligence, and machine learning.
+      I combine real-world business experience with practical analytical skills.
+    </p>
+    <div class="buttons">
+      <a class="button" href="#projects">Explore My Work</a>
+      <a class="button secondary" href="https://github.com/avialazraki" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a class="button secondary" href="https://www.linkedin.com/in/avialazraki/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+  </section>
+
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>
+        My professional background spans e-commerce, technology, logistics,
+        hospitality, strategic partnerships, and customer experience.
+        I've worked with international customers, partners, and suppliers
+        across multiple markets.
+      </p>
+      <p>
+        Through an AI-Powered Data Analytics Bootcamp, I'm building practical
+        experience with Python, PostgreSQL, Power BI, statistics, and
+        machine learning.
+      </p>
+      <p>
+        My focus is applying analytical thinking to business performance,
+        operational efficiency, customer behavior, and better decisions.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills" class="container">
+    <h2>Skills & Tools</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Data & Technology</h3>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">NumPy</span>
+          <span class="tag">SQL</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">Power BI</span>
+          <span class="tag">Scikit-learn</span>
+          <span class="tag">Data Visualization</span>
+          <span class="tag">Machine Learning</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Business Expertise</h3>
+        <div class="tags">
+          <span class="tag">Business Operations</span>
+          <span class="tag">Strategic Partnerships</span>
+          <span class="tag">E-commerce</span>
+          <span class="tag">Logistics</span>
+          <span class="tag">Customer Success</span>
+          <span class="tag">KPI Reporting</span>
+          <span class="tag">Process Optimization</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="container">
+    <h2>Featured Project</h2>
+    <div class="card">
+      <div class="eyebrow">END-TO-END ANALYTICS CAPSTONE</div>
+      <h3>HotelIQ — Hotel Revenue, Demand & Cancellation Intelligence</h3>
+      <p>
+        An end-to-end analytics project investigating hotel booking trends,
+        cancellation behavior, and opportunities for business improvement.
+        The project combines Python data preparation and analysis,
+        PostgreSQL queries, a three-page Power BI dashboard, and
+        predictive machine learning.
+      </p>
+
+      <div class="metrics">
+        <div class="card metric">
+          <strong>118,564</strong>
+          <span>Cleaned booking records</span>
+        </div>
+        <div class="card metric">
+          <strong>37.26%</strong>
+          <span>Overall cancellation rate</span>
+        </div>
+        <div class="card metric">
+          <strong>0.8321</strong>
+          <span>Random Forest test ROC-AUC</span>
+        </div>
+      </div>
+
+      <h3 style="margin-top:30px;">Executive Overview</h3>
+      <img class="screenshot"
+           src="https://raw.githubusercontent.com/avialazraki/HotelIQ/main/images/HotelIQ_Executive_Overview.png"
+           alt="HotelIQ Power BI executive overview dashboard"
+           loading="lazy">
+
+      <h3 style="margin-top:30px;">Cancellation Drivers</h3>
+      <img class="screenshot"
+           src="https://raw.githubusercontent.com/avialazraki/HotelIQ/main/images/HotelIQ_Cancellation_Drivers.png"
+           alt="HotelIQ cancellation drivers dashboard"
+           loading="lazy">
+
+      <h3 style="margin-top:30px;">Machine Learning Insights</h3>
+      <img class="screenshot"
+           src="https://raw.githubusercontent.com/avialazraki/HotelIQ/main/images/HotelIQ_Machine_Learning_Insights.png"
+           alt="HotelIQ machine learning insights dashboard"
+           loading="lazy">
+
+      <p class="note">
+        The predictive model was evaluated on a held-out test set.
+        Booking value estimates are not actual collected revenue.
+      </p>
+      <div class="buttons">
+        <a class="button" href="https://github.com/avialazraki/HotelIQ" target="_blank" rel="noopener noreferrer">View Complete Project on GitHub →</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="container">
+    <h2>Let's Connect</h2>
+    <p>
+      Interested in data analytics, business intelligence, operations,
+      partnerships, and customer success opportunities.
+    </p>
+    <div class="buttons">
+      <a class="button" href="https://www.linkedin.com/in/avialazraki/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
+      <a class="button secondary" href="https://github.com/avialazraki" target="_blank" rel="noopener noreferrer">Explore GitHub</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>© 2026 Avi Alazraki · Built with HTML, CSS & GitHub Pages</p>
+  </div>
+</footer>
+
+</body>
+</html>
